@@ -16,6 +16,7 @@ import { AuthModule } from './auth/auth.module';
 import { config } from 'dotenv';
 import { UsersModule } from './users/users.module';
 import { DatabaseModule } from './config/database.module';
+import { ArtistsModule } from './artists/artists.module';
 const devConfig = {
   port: 9000,
 };
@@ -31,6 +32,7 @@ config();
     PlayListModule,
     AuthModule,
     UsersModule,
+    ArtistsModule,
   ],
   controllers: [AppController],
   providers: [

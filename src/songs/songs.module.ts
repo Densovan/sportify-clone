@@ -18,15 +18,6 @@ import { Artist } from 'src/artists/artist.entity';
   controllers: [SongsController],
   providers: [
     SongsService,
-
-    // {
-    //   provide: SongsService,
-    //   useClass: SongsService,
-    // },
-    // {
-    //   provide: SongsService,
-    //   useValue: mockSongsService,
-    // },
     {
       provide: 'CONNECTION',
       useValue: connection,
